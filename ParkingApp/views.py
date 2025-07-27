@@ -27,3 +27,6 @@ class EmployeeAPIView(APIView):
         employees = Employee.objects.all()
         serializer = EmployeeSerializer(data = request.data)
         return Response(serializer.data)
+    
+    def post(self, request):
+        pass
